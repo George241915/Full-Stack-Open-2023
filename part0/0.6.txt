@@ -1,0 +1,10 @@
+title 'Diagrama SPA'
+
+note over browser
+El navegador manda solicitud POST un json 
+content-type json
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa {cobtent: "Hola", date:"2023-07-03"}
+server-->browser: code 201 Created
+
